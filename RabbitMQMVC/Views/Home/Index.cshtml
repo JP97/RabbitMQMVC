@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<div class="w-50">
+    <form asp-action="Test" class="d-flex flex-column">
+        <h4>Tour Selection</h4>
+        <span class="d-flex flex-column">
+            <label for="Name" >Name</label>
+            <input name="Name" type="text" />
+        </span>
+        <span class="d-flex flex-column">
+            <label for="Email">Email</label>
+            <input name="Email" type="text" />
+        </span>
+        <span class="d-flex flex-column">
+            <label for="Tour">Tours</label>
+            <select name="Tour">
+                <option selected value="">Choose a Tour</option>
+                <option value="grand_tour">Grand Tour</option>
+            </select>
+        </span>
+        <span class="d-flex flex-row align-content-center">
+            <label for="Booked" class="m-0">Book</label>
+            <input name="Booked" class="mr-3" type="checkbox" />
+        </span>
+
+        <input class="btn-primary w-25" value="Submit" type="submit" />
+    </form>
+</div>
